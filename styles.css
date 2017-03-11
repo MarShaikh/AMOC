@@ -1,0 +1,70 @@
+#HomeX3118b {
+  background-color: #0c72ad;
+  margin-top: 50px;
+  padding-top: 15em;
+  padding-bottom:15em;
+}
+#branding{
+  font-family: 'Signika', sans-serif;
+  background-color:#fff;
+  font-size: 15px;
+}
+#Login-side
+{
+  background-color: #a0acb2;
+  paddding-top: 15em;
+  padding-bottom: 15em;
+}
+#Contact-us {
+  text-align: center;
+  font-family: 'Amatic SC', sans-serif;
+}
+#navButton
+{
+  background-color: #fff;
+}
+#buttons
+{
+  margin-top: 10em;
+}
+.heading {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  font-family:'Rubik Mono One', sans-serif;
+  margin: auto;
+}
+.para
+{
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 25px;
+  color: #fff;
+}
+.login
+{
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 10px;
+  color: #fff;
+  margin-top: 20em;
+}
+.btn {
+  background: #3498db;
+  /* background-image: -webkit-linear-gradient(top, #3498db, #2980b9)
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9); */
+  -webkit-border-radius: 48;
+  border-radius: 48px;
+  font-family: 'Signika', sans-serif;;
+  color: #ffffff;
+  font-size: 25px;
+  background: #3498db;
+  padding: 12px 20px 10px 20px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  /*background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db); */
+}
