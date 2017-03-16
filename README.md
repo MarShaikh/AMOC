@@ -1,2 +1,2 @@
-# AMOC
-This is a app thingy 
+# Attendify
+This app lets teachers and students managing attendence 
