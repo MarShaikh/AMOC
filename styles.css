@@ -1,32 +1,32 @@
 /* Home page styles */
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
 #HomeX3118b {
   background-color: #0c72ad;
-  margin-top: 50px;
-  padding-top: 15em;
+  margin-top: 0px;
+  padding-top: 13.5em;
   padding-bottom:15em;
 }
-#branding{
-  font-family: 'Signika', sans-serif;
-  background-color:#fff;
-  font-size: 15px;
-}
+
 #Login-side
 {
   background-color: #a0acb2;
   paddding-top: 15em;
   padding-bottom: 15em;
 }
-#Contact-us {
-  text-align: center;
-  font-family: 'Amatic SC', sans-serif;
-}
-#navButton
-{
-  background-color: #fff;
-}
 #buttons
 {
   margin-top: 10em;
+}
+.btn {
+  background-color: #204c93;
+  color: white;
+}
+.btn:hover{
+  background-color: #525459;
 }
 .heading {
   font-size: 50px;
@@ -38,7 +38,7 @@
 .para
 {
   font-family: 'Amatic SC', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   color: #fff;
 }
 .login
@@ -249,3 +249,180 @@ input[type=text], input[type=password] {
     }
 }
 /*Css for the sign up button*/
+
+
+
+/****************************************************************************/
+/*******************************SIDE NAVBAR**********************************/
+head, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 240px;
+    font-family: 'Titillium Web', sans-serif;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #0c72ad;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 100px;
+    font-size: 25px;
+    margin-left: 25px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #page-content-wrapper {
+        padding: 0px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+#selections{
+  font-size: 17px;
+  margin-left: 15px;
+}
+.glyphicon{
+  font-size: 18px;
+}
+.glyphicon.glyphicon-time, .glyphicon.glyphicon-dashboard{
+  margin-left: 60px;
+}
+.glyphicon.glyphicon-log-out{
+  margin-left: 85px;
+}
+.glyphicon.glyphicon-calendar{
+  margin-left: 19px;
+}
+
+/***********************************************/
+/********************Menu Button****************/
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.6s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
