@@ -1,109 +1,97 @@
+
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <title>Attendify</title>
-   <link rel="stylesheet" href="styles.css">
-   <script src="script.js"></script>
-   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Rubik+Mono+One|Rubik:400i|Signika|Anton" rel="stylesheet">
-   <script href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- </head>
- <div>
-   <navbar class = "navbar navbar-fixed-top" id="branding" >
-     <div class = "container-fluid">
-          <div class="navbar-header">
-             <button type="button" id ="navButton" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-               <span class = "glyphicon glyphicon-chevron-down"></span>
-            </button>
-             <a class="navbar-brand" href="#"><b>Attendify</b></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-               <ul class="nav navbar-nav navbar-right">
-               <li class="active"><a href="#HomeX3118b"><div class="myNavbar">Home</div></a></li>
-                 <li><a href="#Login-side">Login</a></li>
-                 <li><a href="#Contact-us">Contact Us</a></li>
-              </ul>
-          </div>
-     </div>
-   </navbar>
-</div>
- <div id="HomeX3118b">
-    <div class="container-fluid text-center">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Attendify</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Rubik+Mono+One|Rubik:400i|Signika|Anton|Titillium+Web|Lobster" rel="stylesheet">
+  <script href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<div id="HomeX3118b">
+   <div class="container-fluid text-center">
      <div class="heading"><h1>Attendify</h1></div>
-       <div class="para"><p><b> What is this app?</br>This website helps teachers and students in the
-           attendence of things.</b>
-       </p>
-     </div>
-   </div>
+      <div class="para"><p><b> What is this app?</br>This app helps students and teachers keep track on one of the most debatable subjects;<br> Attendence.</br> </b>
+      </p>
+    </div>
+      <div class="row" id="buttons">
+      <div class="col-xs-6"><a class="btn btn-lg">
+        <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</div></a></div>
+      <div class = "col-xs-6"><a class="btn btn-lg"><div onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up </div></a></div>
+    </div>
+  </div>
 </div>
- <div id="Login-side">
- <div class ="container-fluid text-center">
-     <div class="login">
-       <h2>New to the website?</h2>
-     </div>
-     <div class="row" id="buttons">
-        <div class="col-xs-6">
-          <button class="btn btn-lg btn-primary ">
-             <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</div>
-          </button>
-        </div>
-       <div class = "col-xs-6">
-         <button class="btn btn-lg btn-primary">
-           <div onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign up</div>
-         </button>
-       </div>
-     </div>
- </div>
- </div>
+
 <div id="id01" class="modal">
-   <form class="modal-content animate" action="/action_page.php">
-         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-     <div class="container">
-          <label><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-
-          <label><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-
-          <button class="btn btn-primary button1" style="background-color:#0c72ad" type="submit">Login</button>
-          <input type="checkbox" checked="checked"> Remember me
-     </div>
-
-
-     <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="button1" style="background-color:#a0acb2" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">Cancel</button>
-        <span class="psw">Forgot <a href="#">password</a>?</span>
-     </div>
-   </form>
- </div>
-
-<div id = "id02" class="modal">
   <form class="modal-content animate" action="/action_page.php">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <div class="container">
-          <label><b>Student's ID/ Employer's ID</b></label>
-          <input type="text" placeholder="Enter ID" name="uid" required>
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
-          <label><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+    <div class="container-fluid">
+      <label><b>ID</b></label>
+      <input type="text" placeholder="Enter ID" name="uname" required>
 
-          <label><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
 
-          <label><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-          <input type="checkbox" checked="checked"> Remember me
-          <p>By creating an account you agree to our <a href="#">Terms and Privacy</a>.</p>
+      <button class="button1" style="background-color:#0c72ad" type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
 
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById(id02).style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
-             <button type="submit" class="btn btn-primary signupbtn">Sign Up</button>
-          </div>
-        </div>
+    <div class="container-fluid" style="background-color:#f1f1f1">
+      <button type="button" class="button1" style="background-color:#a0acb2" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
   </form>
 </div>
- <footer id="Contact-us">
-   <p style = "font-size: 30px">Created by: MkC</p>
- </footer>
+
+<div id="id02" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="container-fluid">
+      <label><b>ID</b></label>
+      <input type="text" placeholder="Enter ID" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Re-enter Password</b></label>
+      <input type="password" placeholder="Re-enter Password" name="psw" required onkeydown="return (event.keyCode!=13);">
+
+      <button class="button1" style="background-color:#0c72ad" type="submit">Sign Up as Teacher</button>
+      <button class="button1" style="background-color:#0c72ad" type="submit">Sign Up as Student</button>
+      <input type="checkbox" checked="checked">I agree with the <a href="#">Terms and Conditions</a>
+    </div>
+
+    <div class="container-fluid" style="background-color:#f1f1f1">
+      <button type="button" class="button1" style="background-color:#a0acb2" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal0 = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal0) {
+        modal0.style.display = "none";
+    }
+}
+// Get the modal
+var modal1 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+
+</script>
